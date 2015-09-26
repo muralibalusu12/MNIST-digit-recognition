@@ -25,8 +25,8 @@ A=[1:1:28000];
 finallabels=[A;testlabels];
 
 fileID = fopen('dtreelabels.csv','w');
-fprintf(fileID,'%5s','Label');
-fprintf(fileID,'%6.2f\n',labels);
+fprintf(fileID,'%5s\n','Label');
+fprintf(fileID,'%6.2f\n',testlabels);
 fclose(fileID);
 
-%percentage=85.486%
+%percentage_accuracy=85.486%

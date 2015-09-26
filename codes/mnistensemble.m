@@ -28,7 +28,7 @@ finallabels=[A;testlabels];
 
 fileID = fopen('ensemblelabels.csv','w');
 fprintf(fileID,'%5s\n','Label');
-fprintf(fileID,'%6.2f\n',labels);
+fprintf(fileID,'%6.2f\n',testlabels);
 fclose(fileID);
 
 %percentage=96.629%
@@ -40,6 +40,6 @@ ensemble=fitensemble(traindata,trainlabels,'AdaBoostM2',30,tree);
 %pedicting labels on test data
 testlabels=predict(ensemble,testdata);
 
-%percentage=97.000%
+%percentage_accuracy=97.000%
 
 
